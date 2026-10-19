@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contactez Nature Florale Afrique pour un devis : téléphone, e-mail ou WhatsApp.">
+  <title>Contact | Nature Florale Afrique</title>
+
+  <!-- Petite image affichée dans l'onglet du navigateur -->
+  <link rel="icon" href="images/logo.jpg">
+
+  <!-- Polices Google Fonts (titres : Bricolage Grotesque, textes : DM Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap">
+
+  <!-- Feuille de style du site -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ EN-TÊTE : logo, nom de l'entreprise et menu ============ -->
+  <header id="entete">
+    <div class="in bar">
+
+      <!-- Logo + nom : cliquer ramène à l'accueil -->
+      <a class="brand" href="index.html" aria-label="Nature Florale Afrique, accueil">
+        <img src="images/logo.jpg" width="51" height="56" alt="Logo Nature Florale Afrique">
+        <span><b>Nature Florale</b><small>AFRIQUE</small></span>
+      </a>
+
+      <!-- Bouton à trois traits (visible seulement sur téléphone et tablette) -->
+      <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Menu : la page actuelle a la classe "on" (en vert citron) -->
+      <nav id="menu" aria-label="Navigation principale">
+      <a class="l" href="index.html">Accueil</a>
+      <a class="l" href="services.html">Services</a>
+      <a class="l" href="realisations.html">Réalisations</a>
+      <a class="l" href="a-propos.html">À propos</a>
+      <a class="l on" href="contact.html" aria-current="page">Contact</a>
+        <a class="btn sm" href="contact.html">Devis gratuit</a>
+        <a class="nav-tel" href="tel:+2290196036942">+229 01 96 03 69 42</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ TITRE DE LA PAGE : photo du jardin en fond ============ -->
+    <section class="photo bg-jardin">
+      <div class="in chero">
+        <span class="eyebrow">Contact</span>
+        <h1>Parlons de votre projet</h1>
+        <p class="sub">Appelez-nous, écrivez-nous ou préparez votre demande ci-dessous. Le devis est gratuit.</p>
+      </div>
+    </section>
+
+    <!-- ============ COORDONNÉES + FORMULAIRE ============ -->
+    <section class="sec band" style="padding-block: 56px 84px;">
+      <div class="in cgrid">
+
+        <!-- Colonne de gauche : téléphones et e-mail (bouton "Copier" géré par js/contact.js) -->
+        <div class="cinfo">
+
+          <div class="cc">
+            <div>
+              <small>Téléphone</small>
+              <strong>+229 01 96 03 69 42</strong>
+            </div>
+            <button class="copy" type="button" data-copy="+229 01 96 03 69 42">Copier</button>
+          </div>
+
+          <div class="cc">
+            <div>
+              <small>Autre numéro</small>
+              <strong>+229 01 69 69 43 16</strong>
+            </div>
+            <button class="copy" type="button" data-copy="+229 01 69 69 43 16">Copier</button>
+          </div>
+
+          <div class="cc">
+            <div>
+              <small>Email</small>
+              <strong>naturefloralafrique@gmail.com</strong>
+            </div>
+            <button class="copy" type="button" data-copy="naturefloralafrique@gmail.com">Copier</button>
+          </div>
+
+        </div>
+
+        <!-- Colonne de droite : formulaire de devis -->
+        <div class="fc">
+          <h2>Votre demande de devis</h2>
+
+          <!-- Rien n'est envoyé par ce formulaire : le bouton vert ouvre WhatsApp -->
+          <form id="devis" novalidate>
+            <div class="two">
+              <label for="nom">Votre nom
+                <input id="nom" autocomplete="name" placeholder="Nom et prénom">
+              </label>
+              <label for="lieu">Quartier ou ville
+                <input id="lieu" placeholder="Ex. Cotonou, Calavi">
+              </label>
+            </div>
+
+            <label for="type">Type de travaux
+              <select id="type">
+              <option>Création de jardins</option>
+              <option>Pelouse et gazon</option>
+              <option>Plantes et fleurs</option>
+              <option>Arrosage et irrigation</option>
+              <option>Allées, terrasses et cours</option>
+              <option>Entretien régulier</option>
+              </select>
+            </label>
+
+            <label for="msg">Votre projet
+              <textarea id="msg" placeholder="Surface approximative, ce que vous souhaitez, délai..."></textarea>
+            </label>
+
+            <!-- Le lien de ce bouton est rempli par js/contact.js avec votre message -->
+            <a class="btn wide" id="wa" href="https://wa.me/2290196036942" target="_blank" rel="noopener">Préparer mon message sur WhatsApp</a>
+            <p class="note">Ce bouton ouvre WhatsApp avec votre message déjà écrit. Rien n'est envoyé tant que vous n'appuyez pas sur Envoyer dans WhatsApp.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ PIED DE PAGE ============ -->
+  <footer>
+    <div class="in">
+      <span>© 2026 Nature Florale Afrique. Leader de l'aménagement paysager.</span>
+      <span>naturefloralafrique@gmail.com</span>
+    </div>
+  </footer>
+
+  <!-- Script du menu (téléphone et tablette) -->
+  <script src="js/menu.js"></script>
+
+  <!-- Script de la page : message WhatsApp et boutons "Copier" -->
+  <script src="js/contact.js"></script>
+
+</body>
+</html>

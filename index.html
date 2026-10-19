@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nature Florale Afrique : création de jardins, pelouses, plantes, arrosage et entretien d'espaces verts au Bénin.">
+  <title>Nature Florale Afrique - Aménagement paysager</title>
+
+  <!-- Petite image affichée dans l'onglet du navigateur -->
+  <link rel="icon" href="images/logo.jpg">
+
+  <!-- Polices Google Fonts (titres : Bricolage Grotesque, textes : DM Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap">
+
+  <!-- Feuille de style du site -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ EN-TÊTE : logo, nom de l'entreprise et menu ============ -->
+  <header id="entete">
+    <div class="in bar">
+
+      <!-- Logo + nom : cliquer ramène à l'accueil -->
+      <a class="brand" href="index.html" aria-label="Nature Florale Afrique, accueil">
+        <img src="images/logo.jpg" width="51" height="56" alt="Logo Nature Florale Afrique">
+        <span><b>Nature Florale</b><small>AFRIQUE</small></span>
+      </a>
+
+      <!-- Bouton à trois traits (visible seulement sur téléphone et tablette) -->
+      <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Menu : la page actuelle a la classe "on" (en vert citron) -->
+      <nav id="menu" aria-label="Navigation principale">
+      <a class="l on" href="index.html" aria-current="page">Accueil</a>
+      <a class="l" href="services.html">Services</a>
+      <a class="l" href="realisations.html">Réalisations</a>
+      <a class="l" href="a-propos.html">À propos</a>
+      <a class="l" href="contact.html">Contact</a>
+        <a class="btn sm" href="contact.html">Devis gratuit</a>
+        <a class="nav-tel" href="tel:+2290196036942">+229 01 96 03 69 42</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ INTRODUCTION : photo du jardin en fond ============ -->
+    <section class="photo bg-jardin">
+      <div class="in hero">
+
+        <!-- Texte à gauche -->
+        <div>
+          <span class="eyebrow">Aménagement paysager · Bénin</span>
+          <h1>Des <em>espaces verts</em> conçus, plantés et entretenus pour vous.</h1>
+          <p class="lead">Jardins, pelouses, plantes et entretien pour les maisons, hôtels, entreprises et collectivités. Un seul interlocuteur, de la conception au suivi.</p>
+
+          <!-- Deux boutons : devis et services -->
+          <div class="cta-row">
+            <a class="btn" href="contact.html">Demander un devis</a>
+            <a class="btn ghost" href="services.html">Voir nos services</a>
+          </div>
+
+          <!-- Les deux numéros de téléphone -->
+          <div class="tels">
+            <span>+229 01 96 03 69 42</span>
+            <span>+229 01 69 69 43 16</span>
+          </div>
+        </div>
+
+        <!-- Globe vert à droite (dessin vectoriel, pas une photo) -->
+        <div class="globe">
+          <svg viewBox="0 0 400 400" role="img" aria-label="Globe vert entouré de feuilles, avec un repère rouge sur le Bénin">
+      <defs>
+        <radialGradient id="g" cx="38%" cy="32%" r="75%">
+          <stop offset="0" stop-color="#d4ef8e"/>
+          <stop offset=".45" stop-color="#7cb832"/>
+          <stop offset="1" stop-color="#1b5a28"/>
+        </radialGradient>
+        <linearGradient id="l1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#a6d85a"/><stop offset="1" stop-color="#1f6a2c"/>
+        </linearGradient>
+      </defs>
+      <circle cx="200" cy="190" r="150" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <circle cx="200" cy="190" r="128" fill="url(#g)"/>
+      <g fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="1.4">
+        <ellipse cx="200" cy="190" rx="128" ry="46"/>
+        <ellipse cx="200" cy="190" rx="70" ry="128"/>
+        <ellipse cx="200" cy="190" rx="128" ry="100"/>
+        <path d="M200 62V318M72 190H328"/>
+      </g>
+      <g stroke="#fff" stroke-opacity=".55" stroke-width="1">
+        <path d="M188 176l-40-30M188 176l-48 4M188 176l-38 38M188 176l-12 50M188 176l22 -48M188 176l50 -20M188 176l52 18"/>
+      </g>
+      <circle cx="188" cy="176" r="9" fill="#d3262c"/>
+      <circle cx="188" cy="176" r="15" fill="none" stroke="#d3262c" stroke-opacity=".5" stroke-width="2"/>
+      <path d="M26 300C60 240 150 250 226 292C150 330 70 336 26 300Z" fill="url(#l1)"/>
+      <path d="M34 300C90 280 150 285 214 292" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+      <path d="M374 296C346 236 262 244 190 296C262 334 336 336 374 296Z" fill="url(#l1)" opacity=".92"/>
+      <path d="M366 296C310 280 252 286 198 296" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+      <rect x="110" y="322" width="180" height="40" rx="12" fill="#0a2412"/>
+      <text x="200" y="349" text-anchor="middle" font-family="Bricolage Grotesque,Trebuchet MS,sans-serif" font-weight="800" font-size="22" letter-spacing="3" fill="#e9f5dc">AFRIQUE</text>
+    </svg>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ SERVICES : six cartes ============ -->
+    <section class="sec">
+      <div class="in">
+        <span class="eyebrow">Nos services</span>
+        <h2 class="h2">Tout ce qu'il faut pour un extérieur réussi</h2>
+        <p class="sub">Du dessin du jardin à l'entretien de chaque semaine, nous couvrons l'ensemble du travail paysager.</p>
+
+        <div class="cards">
+
+          <article class="card">
+            <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 14c0-3-2-5-6-5 0 3 2 5 6 5z"/></svg></span>
+            <h3>Création de jardins</h3>
+            <p>Plan, choix des végétaux et réalisation complète de jardins pour villas, résidences et espaces professionnels.</p>
+            <a class="more" href="services.html#jardin">En savoir plus</a>
+          </article>
+
+          <article class="card">
+            <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18"/><path d="M6 20c0-5 1-8 3-11M12 20V7M18 20c0-5-1-8-3-11"/></svg></span>
+            <h3>Pelouse et gazon</h3>
+            <p>Pose de gazon naturel, nivellement du terrain, regarnissage et tonte pour une pelouse dense et régulière.</p>
+            <a class="more" href="services.html#pelouse">En savoir plus</a>
+          </article>
+
+          <article class="card">
+            <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c-1-4-4-5-8-4M12 12c1-4 4-5 8-4M12 12c-3-2-5-1-7 3M12 12c3-2 5-1 7 3M12 12V5"/></svg></span>
+            <h3>Plantes et fleurs</h3>
+            <p>Plantes d'intérieur et d'extérieur, massifs fleuris, haies et arbustes choisis pour le climat tropical.</p>
+            <a class="more" href="services.html#plantes">En savoir plus</a>
+          </article>
+
+          <article class="card">
+            <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></span>
+            <h3>Arrosage et irrigation</h3>
+            <p>Installation de systèmes d'arrosage adaptés à la surface, pour des plantations qui tiennent en saison sèche.</p>
+            <a class="more" href="services.html#arrosage">En savoir plus</a>
+          </article>
+
+          <article class="card">
+            <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19l4-12h8l4 12z"/><path d="M6.5 14h11M10 7l-1.5 12M14 7l1.5 12"/></svg></span>
+            <h3>Allées, terrasses et cours</h3>
+            <p>Pavage, bordures et aménagement des sols autour des espaces verts, pour un ensemble net et durable.</p>
+            <a class="more" href="services.html#allees">En savoir plus</a>
+          </article>
+
+          <article class="card">
+            <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><path d="M9 15l8-11M15 15L7 4"/></svg></span>
+            <h3>Entretien régulier</h3>
+            <p>Tonte, taille, désherbage, traitement et remplacement des plantes, sur contrat mensuel ou à la demande.</p>
+            <a class="more" href="services.html#entretien">En savoir plus</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLIENTS : quatre colonnes sur fond vert ============ -->
+    <section class="sec band">
+      <div class="in">
+        <span class="eyebrow">Nos clients</span>
+        <h2 class="h2">Pour tous ceux qui ont un espace à valoriser</h2>
+
+        <div class="cols c4">
+
+          <div>
+            <h3>Particuliers</h3>
+            <p>Villas, cours et jardins de famille</p>
+          </div>
+
+          <div>
+            <h3>Hôtels et restaurants</h3>
+            <p>Entrées, terrasses et espaces d'accueil</p>
+          </div>
+
+          <div>
+            <h3>Entreprises</h3>
+            <p>Sièges, usines et immeubles de bureaux</p>
+          </div>
+
+          <div>
+            <h3>Écoles et collectivités</h3>
+            <p>Établissements, places et bords de route</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANDEAU : appel à l'action (photo + voile vert) ============ -->
+    <section class="cta band photo bg-batiment">
+      <div class="in">
+        <div>
+          <h2>Un projet de jardin ou d'entretien ?</h2>
+          <p>Le devis est gratuit. Appelez le +229 01 96 03 69 42.</p>
+        </div>
+        <a class="btn" href="contact.html">Demander un devis</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ PIED DE PAGE ============ -->
+  <footer>
+    <div class="in">
+      <span>© 2026 Nature Florale Afrique. Leader de l'aménagement paysager.</span>
+      <span>naturefloralafrique@gmail.com</span>
+    </div>
+  </footer>
+
+  <!-- Script du menu (téléphone et tablette) -->
+  <script src="js/menu.js"></script>
+
+</body>
+</html>

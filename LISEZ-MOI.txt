@@ -1,0 +1,43 @@
+NATURE FLORALE AFRIQUE - SITE WEB
+=================================
+
+COMMENT OUVRIR LE SITE
+Double-cliquez sur le fichier "index.html". Le site s'ouvre dans votre navigateur.
+(Une connexion internet est utile pour afficher les polices du site.)
+
+CONTENU DU DOSSIER
+  index.html          Page d'accueil
+  services.html       Page des services
+  realisations.html   Page des réalisations (projets, filtres, photos)
+  a-propos.html       Page À propos
+  contact.html        Page de contact et formulaire de devis
+  css/style.css       Couleurs, polices et mise en page de tout le site
+  js/contact.js       Message WhatsApp et boutons "Copier" de la page Contact
+  js/realisations.js  Filtres et visionneuse de photos de la page Réalisations
+  js/menu.js          Menu à trois traits (téléphone et tablette)
+  images/             Logo et photos du site
+  images/realisations/  Photos des projets
+
+COMMENT MODIFIER
+- Un texte : ouvrez la page .html avec le Bloc-notes et changez le texte
+  entre les balises. Chaque partie de la page est annoncée par un commentaire.
+- Une couleur : ouvrez css/style.css, section 1 (VARIABLES), changez le code
+  de la couleur. Elle change sur tout le site.
+- Une photo de fond : remplacez le fichier dans le dossier "images" en gardant
+  le même nom (jardin.jpg ou batiment.jpg).
+- Un numéro WhatsApp : dans js/contact.js (NUMERO_WHATSAPP) et dans
+  contact.html (lien du bouton vert).
+
+COMMENT AJOUTER UN PROJET DANS "RÉALISATIONS"
+1. Mettez vos photos dans le dossier images/realisations/.
+2. Ouvrez realisations.html et copiez une carte de projet (elle commence par
+   <article class="pc" ...> et finit par </article>).
+3. Changez :
+   - data-cat : realisation, controle, etudes, pepiniere ou drone
+   - data-photos : les noms des photos séparés par des virgules
+   - data-titre et data-client : le titre et le client
+   - la première photo (src) et le texte affiché sur la carte.
+
+POUR METTRE LE SITE EN LIGNE
+Envoyez tout le contenu de ce dossier chez votre hébergeur (par exemple
+naturefloralafrique.com), en gardant les dossiers css, js et images.
